@@ -84,8 +84,7 @@ export default {
   },
   methods: {
     submitFun(){
-      // console.log(this.username)
-      if(this.param[0].username == undefined){
+      if(this.param[0].username == ""){
         Toast({
             message: '请填写姓名',
             position: 'bottom',
@@ -93,7 +92,7 @@ export default {
         });
         return false
       }
-      if(this.param[0].phone == undefined){
+      if(this.param[0].phone == ""){
         Toast({
             message: '请填写手机号',
             position: 'bottom',
@@ -101,7 +100,7 @@ export default {
         });
         return false
       }
-      if(this.param[0].address == undefined){
+      if(this.param[0].address == ""){
         Toast({
             message: '请填写地址',
             position: 'bottom',
