@@ -7,12 +7,12 @@ import {Toast} from 'mint-ui'
 
 // 环境的切换
 if (process.env.NODE_ENV == 'development') { 
-    axios.defaults.baseURL = 'http://192.168.1.169:8787';}
+    axios.defaults.baseURL = 'https://www.hotmine.cn/sys/';}
 else if (process.env.NODE_ENV == 'debug') { 
-    axios.defaults.baseURL = 'http://192.168.1.169:8787';
+    axios.defaults.baseURL = 'https://www.hotmine.cn/sys/';
 } 
 else if (process.env.NODE_ENV == 'production') { 
-    axios.defaults.baseURL = 'http://192.168.1.169:8787';
+    axios.defaults.baseURL = 'https://www.hotmine.cn/sys/';
 }
 axios.defaults.timeout = 10000;
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';

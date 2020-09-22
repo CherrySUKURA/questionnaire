@@ -13,6 +13,11 @@ Vue.use(VueRouter)
     path: '/dial',
     name: 'dial',
     component: () => import("../views/dial.vue")
+  },
+  {
+    path: '/img',
+    name: 'img',
+    component: () => import("../views/img.vue")
   }
 ]
 
